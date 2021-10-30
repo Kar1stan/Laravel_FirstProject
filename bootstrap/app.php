@@ -40,6 +40,34 @@ $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
 );
+$app->singleton(
+    Illuminate\Contracts\Http\Controllers\HomeController::class,
+    App\Http\Controllers\HomeController::class
+);
+$app->singleton(
+    Illuminate\Contracts\Http\Controllers\ProductsController::class,
+    App\Http\Controllers\ProductsController::class
+);
+$app->singleton(
+    Illuminate\Contracts\Http\Controllers\ImageController::class,
+    App\Http\Controllers\ImageController::class
+);
+$app->singleton(
+    Illuminate\Contracts\Http\Controllers\DebugController::class,
+    App\Http\Controllers\DebugController::class
+);
+$app->singleton(
+    Illuminate\Contracts\Http\Controllers\ErrorController::class,
+    App\Http\Controllers\ErrorController::class
+);
+$app->singleton(
+    Illuminate\Contracts\Models\Model::class,
+    App\Models\Model::class
+);
+$app->singleton(
+    Illuminate\Contracts\Models\ProductModel::class,
+    App\Models\ProductModel::class
+);
 
 /*
 |--------------------------------------------------------------------------
